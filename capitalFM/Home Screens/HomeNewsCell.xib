@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeNewsCellID" id="gTV-IL-0wX" customClass="HomeNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-rX-oin">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="EIe-PU-TJW">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-s9-arl">
+                        <rect key="frame" x="155" y="0.0" width="140" height="110"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="28"/>
+                        </variation>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-lQ-5m7">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZVy-s9-arl" secondAttribute="bottom" id="A86-dJ-eDV"/>
+                <constraint firstAttribute="bottom" secondItem="WmT-lQ-5m7" secondAttribute="bottom" id="Dhj-Ds-SCj"/>
+                <constraint firstAttribute="trailing" secondItem="ZVy-s9-arl" secondAttribute="trailing" constant="5" id="Hud-F9-Cd4"/>
+                <constraint firstAttribute="bottom" secondItem="vwD-rX-oin" secondAttribute="bottom" id="UyC-7p-1hw"/>
+                <constraint firstAttribute="trailing" secondItem="WmT-lQ-5m7" secondAttribute="trailing" id="XpC-uy-hUL"/>
+                <constraint firstItem="ZVy-s9-arl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZHy-pJ-4mH"/>
+                <constraint firstItem="vwD-rX-oin" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="brr-RC-hD1"/>
+                <constraint firstItem="WmT-lQ-5m7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d7a-83-0mV"/>
+                <constraint firstItem="vwD-rX-oin" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dWh-cu-XZY"/>
+                <constraint firstItem="ZVy-s9-arl" firstAttribute="leading" secondItem="vwD-rX-oin" secondAttribute="trailing" constant="5" id="tcr-M1-0VG"/>
+                <constraint firstItem="WmT-lQ-5m7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wBr-3g-7YB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="299" height="100"/>
+            <connections>
+                <outlet property="btn" destination="WmT-lQ-5m7" id="rYR-3K-J9K"/>
+                <outlet property="imgNews" destination="vwD-rX-oin" id="RIQ-an-l5m"/>
+                <outlet property="lblNews" destination="ZVy-s9-arl" id="frB-W4-cnI"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="68"/>
+        </collectionViewCell>
+    </objects>
+</document>

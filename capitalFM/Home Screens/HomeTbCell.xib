@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCellId" rowHeight="69" id="KGk-i7-Jjw" customClass="HomeTbCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-eu-zSx">
+                        <rect key="frame" x="0.0" y="5" width="320" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IV-Up-Df9">
+                        <rect key="frame" x="0.0" y="5" width="320" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-fh-4jB">
+                                <rect key="frame" x="10" y="5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GHF-fh-4jB" secondAttribute="height" multiplier="1:1" id="HQU-2o-uDl"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-a9-7oP">
+                                <rect key="frame" x="85" y="12.5" width="161.5" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0c9-rx-8MX">
+                                        <rect key="frame" x="0.0" y="0.0" width="161.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marqueeType">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liam Payne &amp; Rita Ora" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0w-Rl-6pu">
+                                        <rect key="frame" x="0.0" y="25" width="161.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="marqueeType">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URMEAZĂ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="eQi-vJ-F62">
+                                <rect key="frame" x="240" y="5" width="80" height="25"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3Xj-yb-tpE"/>
+                                    <constraint firstAttribute="width" constant="80" id="kdD-UZ-6Jy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="30"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eQi-vJ-F62" firstAttribute="top" secondItem="5IV-Up-Df9" secondAttribute="top" constant="5" id="0Pj-4c-UQh"/>
+                            <constraint firstItem="YLa-a9-7oP" firstAttribute="leading" secondItem="GHF-fh-4jB" secondAttribute="trailing" constant="15" id="CUm-yj-Plq"/>
+                            <constraint firstAttribute="bottom" secondItem="GHF-fh-4jB" secondAttribute="bottom" constant="5" id="UHq-Wp-S4X"/>
+                            <constraint firstItem="GHF-fh-4jB" firstAttribute="leading" secondItem="5IV-Up-Df9" secondAttribute="leading" constant="10" id="Xkh-7Z-AgI"/>
+                            <constraint firstAttribute="trailing" secondItem="eQi-vJ-F62" secondAttribute="trailing" id="dYg-IW-hnQ"/>
+                            <constraint firstItem="YLa-a9-7oP" firstAttribute="centerY" secondItem="GHF-fh-4jB" secondAttribute="centerY" id="k3y-7Q-Sxm"/>
+                            <constraint firstItem="GHF-fh-4jB" firstAttribute="top" secondItem="5IV-Up-Df9" secondAttribute="top" constant="5" id="v4S-kD-w18"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5IV-Up-Df9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5H3-3b-Q9T"/>
+                    <constraint firstAttribute="trailing" secondItem="5IV-Up-Df9" secondAttribute="trailing" id="5IP-kg-Sfk"/>
+                    <constraint firstItem="5IV-Up-Df9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="IIB-0F-Tff"/>
+                    <constraint firstItem="W3f-eu-zSx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="M7e-xl-6vJ"/>
+                    <constraint firstItem="5IV-Up-Df9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aij-Go-ZBQ"/>
+                    <constraint firstItem="5IV-Up-Df9" firstAttribute="bottom" secondItem="W3f-eu-zSx" secondAttribute="bottom" id="itB-fm-0vN"/>
+                    <constraint firstAttribute="bottom" secondItem="W3f-eu-zSx" secondAttribute="bottom" constant="5" id="nyR-eu-qaC"/>
+                    <constraint firstItem="W3f-eu-zSx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s2j-R6-3cS"/>
+                    <constraint firstItem="5IV-Up-Df9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yMx-9f-Pfm"/>
+                    <constraint firstAttribute="trailing" secondItem="W3f-eu-zSx" secondAttribute="trailing" id="zYR-MG-Bfg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="albumArt" destination="GHF-fh-4jB" id="bcv-CN-Cmr"/>
+                <outlet property="lblArtist" destination="0c9-rx-8MX" id="nlE-Sw-puO"/>
+                <outlet property="lblSong" destination="M0w-Rl-6pu" id="JFz-b1-T1e"/>
+                <outlet property="next" destination="eQi-vJ-F62" id="DbT-Hj-I2v"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="149"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="n5K-W3-rMs" id="xKI-1s-4Te"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgE-sd-aCP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" red="0.62745098040000002" green="0.19215686269999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="8C4-GJ-Pc7">
+                            <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glp-lj-Mz3">
+                    <rect key="frame" x="15" y="26" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BaU-Cy-sM7">
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="30" id="IEs-am-O6A">
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" image="back_arrow"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="paf-WH-hwE"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5K-W3-rMs">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="51h-e7-iIf"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n5K-W3-rMs" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="6Ix-ZZ-ANK"/>
+                <constraint firstItem="EgE-sd-aCP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="700-tf-IGU"/>
+                <constraint firstItem="n5K-W3-rMs" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="HHK-fl-cHr"/>
+                <constraint firstItem="glp-lj-Mz3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="6" id="JUg-kn-f0d"/>
+                <constraint firstItem="n5K-W3-rMs" firstAttribute="top" secondItem="EgE-sd-aCP" secondAttribute="bottom" id="U4o-y3-bI9"/>
+                <constraint firstItem="EgE-sd-aCP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WwW-5b-Xka"/>
+                <constraint firstItem="n5K-W3-rMs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="XvT-W3-3yF"/>
+                <constraint firstItem="glp-lj-Mz3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="nCO-65-4iX">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                </constraint>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EgE-sd-aCP" secondAttribute="trailing" id="pUC-gu-Ko1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="164.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow" width="68" height="67"/>
+    </resources>
+</document>

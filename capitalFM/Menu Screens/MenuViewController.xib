@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="footerView" destination="eFg-hp-XOA" id="gGj-ja-twp"/>
+                <outlet property="imageBg" destination="nqB-Kc-xav" id="F8b-KD-YVz"/>
+                <outlet property="menuTable" destination="PwR-Bt-aEo" id="wNd-uK-R2k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqB-Kc-xav">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-Bt-aEo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VoJ-Ui-CGd"/>
+                        <outlet property="delegate" destination="-1" id="nml-nG-sAY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.62745098040000002" green="0.19215686269999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PwR-Bt-aEo" secondAttribute="bottom" id="F9I-DF-Zv8"/>
+                <constraint firstItem="PwR-Bt-aEo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="LWC-5l-CVV"/>
+                <constraint firstItem="PwR-Bt-aEo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cLH-6V-O0T"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PwR-Bt-aEo" secondAttribute="trailing" id="srt-XC-OPq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="eFg-hp-XOA">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-4j-0d6">
+                    <rect key="frame" x="40" y="45" width="170" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-HI-nWY">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <state key="normal" image="icon 2"/>
+                            <connections>
+                                <action selector="actionFbOpen:" destination="-1" eventType="touchUpInside" id="B88-Q5-t3t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjB-pS-1lq">
+                            <rect key="frame" x="60" y="0.0" width="50" height="50"/>
+                            <state key="normal" image="icon 1"/>
+                            <connections>
+                                <action selector="actionYouTubeOpen:" destination="-1" eventType="touchUpInside" id="1am-hK-jrf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yws-aw-oDF">
+                            <rect key="frame" x="120" y="0.0" width="50" height="50"/>
+                            <state key="normal" image="icon 3"/>
+                            <connections>
+                                <action selector="actionInstaOpen:" destination="-1" eventType="touchUpInside" id="rLM-Tg-gZi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Mbd-4j-0d6" firstAttribute="leading" secondItem="H54-0e-3ec" secondAttribute="leading" constant="25" id="DEE-nu-Umm">
+                    <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                    <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                </constraint>
+                <constraint firstItem="H54-0e-3ec" firstAttribute="bottom" secondItem="Mbd-4j-0d6" secondAttribute="bottom" constant="20" id="dzw-u3-9KR">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="H54-0e-3ec"/>
+            <point key="canvasLocation" x="522.5" y="5.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon 1" width="50" height="50"/>
+        <image name="icon 2" width="50" height="50"/>
+        <image name="icon 3" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoVC">
+            <connections>
+                <outlet property="btnBack" destination="Xhz-yQ-gz9" id="b7v-2V-t4u"/>
+                <outlet property="btnShow" destination="uJ1-Aj-T4g" id="JtI-i2-SYe"/>
+                <outlet property="controlView" destination="Bp8-SC-N8R" id="Rai-xv-HKk"/>
+                <outlet property="navigationView" destination="1hZ-95-JAm" id="kUl-Q8-vK9"/>
+                <outlet property="playPauseButton" destination="pIe-pU-Ker" id="KpD-fh-4cr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hZ-95-JAm">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ddy-Gc-z2M">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhz-yQ-gz9">
+                                <rect key="frame" x="20" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="SFy-LK-Esi">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="pSQ-CO-OBI">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="back_arrow"/>
+                                <connections>
+                                    <action selector="backAction:" destination="-1" eventType="touchUpInside" id="yz3-9R-Jhb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Xhz-yQ-gz9" firstAttribute="centerY" secondItem="Ddy-Gc-z2M" secondAttribute="centerY" id="4WI-40-xTX"/>
+                            <constraint firstItem="Xhz-yQ-gz9" firstAttribute="leading" secondItem="Ddy-Gc-z2M" secondAttribute="leading" constant="10" id="aCJ-rr-I3r">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="aFU-E1-OsT">
+                            <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-SC-N8R">
+                    <rect key="frame" x="0.0" y="1266" width="1024" height="100"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ygg-VU-laC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIe-pU-Ker">
+                                <rect key="frame" x="486.5" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UPm-En-KlZ">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="30" id="dhC-qi-6sS">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="button_stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPauseOption:" destination="-1" eventType="touchUpInside" id="K98-2B-fO0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pIe-pU-Ker" firstAttribute="centerX" secondItem="ygg-VU-laC" secondAttribute="centerX" id="Iyq-dD-ngj"/>
+                            <constraint firstItem="pIe-pU-Ker" firstAttribute="centerY" secondItem="ygg-VU-laC" secondAttribute="centerY" id="Vgg-zj-rc8"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="54V-z2-488">
+                            <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ1-Aj-T4g">
+                    <rect key="frame" x="0.0" y="100" width="1024" height="1166"/>
+                    <connections>
+                        <action selector="showControls:" destination="-1" eventType="touchUpInside" id="mti-QD-zbH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bp8-SC-N8R" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="3XG-tE-AxA"/>
+                <constraint firstItem="uJ1-Aj-T4g" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="D45-qu-vE6"/>
+                <constraint firstItem="uJ1-Aj-T4g" firstAttribute="top" secondItem="1hZ-95-JAm" secondAttribute="bottom" id="DpJ-L3-98M"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1hZ-95-JAm" secondAttribute="trailing" id="OZQ-1i-JyV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uJ1-Aj-T4g" secondAttribute="trailing" id="ZpG-fD-MVC"/>
+                <constraint firstItem="Bp8-SC-N8R" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="chL-Mg-dPa"/>
+                <constraint firstItem="Bp8-SC-N8R" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="saA-nd-jeJ"/>
+                <constraint firstItem="Bp8-SC-N8R" firstAttribute="top" secondItem="uJ1-Aj-T4g" secondAttribute="bottom" id="vxL-DU-3XW"/>
+                <constraint firstItem="1hZ-95-JAm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="wLl-a3-5Fd"/>
+                <constraint firstItem="1hZ-95-JAm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xqH-0e-WHn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow" width="68" height="67"/>
+        <image name="button_stop" width="119" height="119"/>
+    </resources>
+</document>

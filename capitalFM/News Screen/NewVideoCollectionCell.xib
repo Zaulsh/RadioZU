@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videoCellID" id="gTV-IL-0wX" customClass="NewVideoCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-hJ-dop">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="235"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D3-vT-OO4">
+                        <rect key="frame" x="5" y="235" width="240" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="40"/>
+                        </variation>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f6-Ct-ADM">
+                        <rect key="frame" x="5" y="205" width="0.0" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="A0I-nz-k5k">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="28"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-qd-4ca">
+                        <rect key="frame" x="255" y="200" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="h9y-wW-hQW">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="30" id="huu-iz-4vg">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                        </constraints>
+                        <state key="normal" image="Play_Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="b5Z-hJ-dop" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="59i-eE-MaN"/>
+                <constraint firstItem="b5Z-hJ-dop" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="84I-jH-F7x"/>
+                <constraint firstAttribute="bottom" secondItem="b5Z-hJ-dop" secondAttribute="bottom" id="OQI-0c-e8Y"/>
+                <constraint firstItem="8D3-vT-OO4" firstAttribute="top" secondItem="5f6-Ct-ADM" secondAttribute="bottom" id="Qfa-rm-nnY"/>
+                <constraint firstItem="5f6-Ct-ADM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="dD3-HB-JI0"/>
+                <constraint firstAttribute="trailing" secondItem="b5Z-hJ-dop" secondAttribute="trailing" id="diU-v1-X0w"/>
+                <constraint firstAttribute="trailing" secondItem="ZZh-qd-4ca" secondAttribute="trailing" constant="5" id="nz3-Gq-vz1"/>
+                <constraint firstItem="8D3-vT-OO4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="rsJ-Gn-ntY"/>
+                <constraint firstAttribute="bottom" secondItem="ZZh-qd-4ca" secondAttribute="bottom" constant="5" id="sKH-UM-dlK"/>
+                <constraint firstAttribute="bottom" secondItem="8D3-vT-OO4" secondAttribute="bottom" id="sqj-9p-2nm"/>
+                <constraint firstItem="ZZh-qd-4ca" firstAttribute="leading" secondItem="8D3-vT-OO4" secondAttribute="trailing" constant="10" id="t1m-kl-Ux1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="btnPlay" destination="ZZh-qd-4ca" id="3hU-6d-FRj"/>
+                <outlet property="lblTime" destination="5f6-Ct-ADM" id="kWL-Fs-gag"/>
+                <outlet property="lblTitle" destination="8D3-vT-OO4" id="XL7-gO-uCW"/>
+                <outlet property="newsImage" destination="b5Z-hJ-dop" id="Jdd-cL-eUL"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Play_Button" width="119" height="119"/>
+        <image name="logo" width="512" height="512"/>
+    </resources>
+</document>
